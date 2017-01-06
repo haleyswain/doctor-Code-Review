@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <link rel="stylesheet" href="build/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Better Doctor</title>
   </head>
   <body>
-
+    <h1>Feeling under the weather?</h1>
+    <h3> Find the right doctor for you!</h3>
+    <div class='box'>
+      <div class='container'>
+        <label for='illness'>Enter a symptom:</label>
+        <input id='illness' type='text'>
+        <button class= 'button' id='showIllness'>Find my Doctor</button>
+        <div class='showDoctor'></div>
+      </div>
+    </div>
   </body>
 </html>
