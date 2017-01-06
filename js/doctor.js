@@ -17,7 +17,7 @@ Doctor.prototype.getDoctor = function(medicalIssue, showDoctor) {
       }
     })
     .fail(function(error){
-      console.log("fail");
+      $('.showDoctor').text("Please Enter a valid Symptom. i.e. headache, toothache, back pain, etc.");
     });
 };
 
