@@ -1,7 +1,28 @@
 $blue : #607a9e;
 
 body {
-  background-color: $blue;
-  color: white;
+  background-image: url('http://www.thepillowofhealth.com/wp-content/uploads/2015/10/bigstock-Medical-physician-doctor-hands-84721406.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
   text-align: center;
+    #illness {
+      text-align: center;
+      font-size: 20px;
+    }
+    #showIllness {
+      color: white;
+      background-color: $blue;
+    }
+}
+
+.box {
+  background-color: white;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-top: 20%;
+  color: $blue;
+}
+html {
+    height: 100%;
 }
