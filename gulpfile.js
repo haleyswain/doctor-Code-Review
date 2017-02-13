@@ -3,6 +3,8 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var browserify = require('browserify');
 var uglify = require('gulp-uglify');
+var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
 var source = require('vinyl-source-stream');
 var del = require('del');
 var buildProduction = utilities.env.production;
@@ -107,4 +109,9 @@ gulp.task('jshint', function() {
   return gulp.src(['js/*.js'])
   .pipe(jshint())
   .pipe(jshint.reporter('default'));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });

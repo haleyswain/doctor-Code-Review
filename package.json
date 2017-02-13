@@ -4,12 +4,6 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {},
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "bower-files": "^3.14.1",
     "browser-sync": "^2.18.5",
@@ -17,8 +11,10 @@
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "del": "^2.2.2",
+    "gh-pages": "^0.12.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-jshint": "^2.0.4",
     "gulp-sass": "^3.0.0",
     "gulp-sourcemaps": "^1.9.1",
@@ -27,5 +23,10 @@
     "jshint": "^2.9.4",
     "mocha": "^3.2.0",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
